@@ -1,18 +1,6 @@
-﻿**Smart-Tank With Fluid Level Dashboard** A COURSE PROJECT REPORT
+﻿**Smart-Tank With Fluid Level Dashboard** 
+By :**SARVESH AHUJA**
 
-By
-
-**SARVESH AHUJA (RA2011026010095)**
-
-Under the guidance of
-
-**Dr. Vimaladevi M**
-
-*In partial fulfilment for the Course*
-
-of
-
-18CSC302J - COMPUTER NETWORKS in Department of Computational Intelligence
 
 ![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.001.png)
 
