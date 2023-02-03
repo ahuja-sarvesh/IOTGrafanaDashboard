@@ -1,30 +1,20 @@
 ﻿**Smart-Tank With Fluid Level Dashboard** 
+ 
 By :**SARVESH AHUJA**
 
+**TABLE OF CONTENTS**
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.001.png)
+**CHAPTERS  CONTENTS** 
 
-**FACULTY OF ENGINEERING AND TECHNOLOGY SRM INSTITUTE OF SCIENCE AND TECHNOLOGY Kattankulathur, Chengalpattu District**
+1.          **ABSTRACT**
+2.          **INTRODUCTION**
+3.          **REQUIREMENT ANALYSIS**
+4.          **ARCHITECTURE & DESIGN**
+5.          **IMPLEMENTATION**
+6.          **RESULTS AND DISCUSSION**
+7.          **CONCLUSION & FUTURE ENHANCEMENT**
+8.          **REFERENCES**
 
-NOVEMBER  2022
-
-**SRM INSTITUTE OF SCIENCE AND TECHNOLOGY**
-
-**(Under Section 3 of UGC Act, 1956)**
-
-**BONAFIDE CERTIFICATE**
-
-Certified that this mini project report "**Smart-Tank With Fluid Level Dashboard**" is the bonafide work of **SARVESH AHUJA (RA2011026010095)** who carried out the project work under my supervision.
-
-**SIGNATURE**
-
-Dr. Vimaladevi M
-
-Assistant Professor
-
-Department of Computational Intelligence
-
-SRM Institute of Science and Technology
 
 **1. ABSTRACT**
 
@@ -46,48 +36,24 @@ Using MQTT(Built on top of UDP protocol) a **Microcontroller** sends ultrasonic 
 
 A dashboard is configured on Grafana cloud to view the data as desired.
 
-**ACKNOWLEDGEMENT**
 
-We express our heartfelt thanks to our honorable **Vice Chancellor Dr. C. MUTHAMIZHCHELVAN**, for being the beacon in all our endeavors.
+2. **INTRODUCTION**
 
-We would like to express my warmth of gratitude to our **Registrar Dr. S. Ponnusamy,** for his encouragement
+->**Scenario Description:**
 
-We express our profound gratitude to our **Dean (College of Engineering and Technology) Dr. T. V.Gopal,** for bringing out novelty in all executions.
-
-We would like to express my heartfelt thanks to Chairperson, School of Computing **Dr. Revathi Venkataraman,** for imparting confidence to complete my course project
-
-We wish to express my sincere thanks to **Course Audit Professor Dr.Annapurani Panaiyappan, Professor and Head, Department of Networking and Communications** and **Course Coordinators** for their constant encouragement and support.
-
-We are highly thankful to our my Course project Faculty **Dr. Vimaladevi M , Assistant Professor, Department of Computational Intelligence,** for her assistance, timely suggestion and guidance throughout the duration of this course project.
-
-We extend my gratitude to our **HoD Dr. R. Annie Uthra, Department of Computational Intelligence** and my Departmental colleagues for their Support.
-
-Finally, we thank our parents and friends near and dear ones who directly and indirectly contributed to the successful completion of our project. Above all, I thank the almighty for showering his blessings on me to complete my Course project.
-
-**TABLE OF CONTENTS**
-
-**CHAPTERS                  CONTENTS** 
-
-1. **ABSTRACT**
-1. **INTRODUCTION**
-1. **REQUIREMENT ANALYSIS**
-1. **ARCHITECTURE & DESIGN**
-1. **IMPLEMENTATION**
-1. **RESULTS AND DISCUSSION**
-1. **CONCLUSION & FUTURE ENHANCEMENT**
-1. **REFERENCES**
-1. **INTRODUCTION**
-1. **Scenario Description:**
 - A tank level monitoring system possesses reliable software and hardware which allows clients to perform industrial operations at a much faster pace along with accurate results. It is equipped with a sensor devices, which capture data in real-time and send it on a secured cloud platform for further analysis.
 - Thus, using a sensor-enabled technology to monitor your tank levels provides greater business benefits than continuing with the traditional means. It offers automation and enhances the capabilities of the assets (storage tanks) to perform better.
 - Also, the solution is easy to install by suspending the sensors through a rod on an open tank or drilling a hole over the lids of closed tanks. It is a feature-rich solution to improve all your industrial tasks and enhance the overall ROI by sufficing the requirements through one single platform.
 - It offers multiple readings and allows you to predict the situational-based outcomes with the help of advanced analytics.
-2. **Our approach:**
+3. **Our approach:**
 - A real time dashboard has been designed for monitoring the fluid level in an industrial tank. A vital problem to solve for ensuring safety of consumers/labor as well as saving industries from losses.
 - The interface can be configured in any desirable format as wanted.Alert notifications can also be set incase the fluid level crosses a certain threshold. If needed , more IOT devices/Sensors can be added with minimal configurations providing both flexibility and saving of operational cost.
 - The AWS Security Groups help define the access key and secret access key for the interface. This is done ensuring proper policies are set as to what resources the interface can access.
-2. **REQUIREMENTS**
-1. **Requirement Analysis:**
+
+
+3. **REQUIREMENTS**
+
+-> **Requirement Analysis:**
 
 From the given scenario, we draw the following requirements:
 
@@ -100,23 +66,23 @@ From the given scenario, we draw the following requirements:
 
 We need to configure a network design keeping the following requirements in mind.
 
-2. **Requirements:**
+-> **Requirements:**
 
 From the given scenario, we draw the following requirements:
 
-**Hardware components:**
+   **Hardware components:**
 
-1. 1 x HC-04 **Ultrasonic sensor** with ESP8266 Nodemcu Microcontroller
-1. 1 x An output device with  -**screen** to view and an internet connection.
-1. 1 x A solid less dense **sheet/sponge** than the liquid which will float (as ultrasonic passes through liquids and we require to find the distance from the sensor to liquid.
+- 1 x HC-04 **Ultrasonic sensor** with ESP8266 Nodemcu Microcontroller
+- 1 x An output device with  -**screen** to view and an internet connection.
+- 1 x A solid less dense **sheet/sponge** than the liquid which will float (as ultrasonic passes through liquids and we require to find the distance from the sensor to liquid.
 
 **Software components:**
 
-1. AWS **IOT Core** service
-1. Amazon **TimestreamDB**
-1. **Grafana** Dashboard
-3. **Details of Components:**
-1) HC-04 Ultrasonic sensor:
+- AWS **IOT Core** service
+- Amazon **TimestreamDB**
+- **Grafana** Dashboard
+- **Details of Components:**
+- HC-04 Ultrasonic sensor:
 
 ![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.002.png)
 
