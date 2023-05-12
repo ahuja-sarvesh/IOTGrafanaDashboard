@@ -360,12 +360,11 @@ The estimated head cost for this system is shown in the table below:
 |IOT Core Service|All day, 1KB data on MQTT|₹0 (negligible)|
 |TimestreamDB|Writes- 1 million write of 1KB size|$0.50|
 ||Queries- Per GB scanned|$0.01|
-
 ||Memory store- Price per GB stored per month|$0.1|
-| :- | :- | - |
 ||Magnetic store- Price per GB stored per month|$0.1|
 |Grafana dashboard|10k metrics + 50GB logs + 50GB traces per month.|Free|
 |**TOTAL per month:**||**$0.71**|
+
 Compared to big companies ( **Ruggedtelemetry, Benewake** and many others) that provide this kind of product/service like the **cost per unit** of this type of product is **over $310** compared to our **simple POC**(Proof concept) of **~$4** making it **more than 100x** more expensive.
 
 By Directly buying the individual sensors we believe that an IOT based Smart Tank monitoring system can be made with estimated cost of **$20(+-$5) head cost.**
