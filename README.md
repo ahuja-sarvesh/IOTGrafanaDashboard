@@ -324,7 +324,7 @@ Table: table name  created in the AWS Timestream Console
 
 ![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.009.jpeg)
 
-`       `The JSON Data can be seen with Distance as the Sensor data of interest.
+The JSON Data can be seen with Distance as the Sensor data of interest.
 
 2. **Check Data storage of sensor Data onto TimestreamDB  fed from the IOT Core service.**
 
