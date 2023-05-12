@@ -40,7 +40,7 @@ A dashboard is configured on Grafana cloud to view the data as desired.
 # 2. INTRODUCTION
 <a name="INTRODUCTION">
 
-->**Scenario Description:**
+**Scenario Description:**
 
 - A tank level monitoring system possesses reliable software and hardware which allows clients to perform industrial operations at a much faster pace along with accurate results. It is equipped with a sensor devices, which capture data in real-time and send it on a secured cloud platform for further analysis.
 - Thus, using a sensor-enabled technology to monitor your tank levels provides greater business benefits than continuing with the traditional means. It offers automation and enhances the capabilities of the assets (storage tanks) to perform better.
@@ -56,7 +56,7 @@ A dashboard is configured on Grafana cloud to view the data as desired.
 # 3. REQUIREMENTS
 <a name="REQUIREMENTS">
  
--> **Requirement Analysis:**
+**Requirement Analysis:**
 
 From the given scenario, we draw the following requirements:
 
@@ -69,7 +69,7 @@ From the given scenario, we draw the following requirements:
 
 We need to configure a network design keeping the following requirements in mind.
 
--> **Requirements:**
+**Requirements:**
 
 From the given scenario, we draw the following requirements:
 
@@ -87,7 +87,7 @@ From the given scenario, we draw the following requirements:
 - **Details of Components:**
 - HC-04 Ultrasonic sensor:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.002.png)
+![](ultrasonic.png)
 
 - This is the HC-SR04 ultrasonic distance sensor. This economical sensor provides 2cm to 400cm of non-contact measurement functionality with a ranging accuracy that can reach up to 3mm.
 - There are only four pins that you need to worry about on the HC-SR04: VCC (Power), Trig (Trigger), Echo (Receive), and GND (Ground).
@@ -95,7 +95,7 @@ From the given scenario, we draw the following requirements:
 - The reason to use this for the project is - effectiveness & cost.(Although more accurate sensors can be used for more delicate/dangerous industrial facilities
 2) ESP8266 Nodemcu DEVKIT Board v1:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.003.png)
+![](esp8266.png)
 
 - The NodeMCU (Node MicroController Unit) is an open source software and hardware development environment that is built around a very inexpensive System-on-a-Chip (SoC) called the ESP8266.
 - The ESP8266, designed and manufactured by Espressif Systems, contains all
@@ -108,7 +108,7 @@ On AWS Cloud:
 
 3) AWS IOT Core service:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.004.png)
+![](iot-core.png)
 
 - AWS IoT provides the cloud services that connect IoT devices to other devices and AWS cloud services.
 - AWS IoT provides device software that can help integrate IoT devices into AWS IoT-based solutions.
@@ -126,7 +126,7 @@ Core supports these protocols:
 - AWS IoT Core for LoRaWAN helps you connect and manage wireless LoRaWAN (low-power long-range Wide Area Network) devices. AWS IoT Core for LoRaWAN replaces the need for client to develop and operate a LoRaWAN Network Server (LNS).
 4) AWS IOT Rule:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.005.png)
+![](iot-rule.png)
 
 - Rules give devices the ability to interact with AWS services. Rules are analyzed and actions are performed based on the MQTT topic stream.
 - We can use rules to support tasks like these:
@@ -138,7 +138,7 @@ Core supports these protocols:
 - Send message data to an AWS IoT Analytics channel.
 5) AWS TimestreamDB:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.006.png)
+![](timestreamDB.png)
 
 - Amazon Timestream is a fast, scalable, fully managed, purpose-built time series database that makes it easy to store and analyze trillions of time series data points per day.
 - Timestream saves time and cost in managing the lifecycle of time series data by keeping recent data in memory and moving historical data to a cost optimized storage tier based upon user defined policies.
@@ -151,7 +151,7 @@ Timestream for machine learning. Other Modules (not AWS):
 
 6) Grafana Dashboard:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.007.png)
+![](graphana.png)
 
 - Grafana is used to visualize results from multiple data sources simultaneously. It is a powerful open-source analytical and visualization tool that consists of multiple individual panels arranged in a grid.
 - The panels interact with configured data sources including (but not limited to) AWS CloudWatch, Microsoft SQL server, Prometheus, MySQL, InfluxDB, and many others.
@@ -175,7 +175,7 @@ understand the data from graphs to histograms.
 
 The cloud architecture is as follows:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.008.png)
+![](cloud-architecture.png)
 
 Diagram above is - Cloud Architecture for the Project
 
@@ -323,19 +323,19 @@ Table: table name  created in the AWS Timestream Console
 <a name="RESULTS">
 1. **Check Data Retrieval Pub-Sub Model Connection on MQTT Test Client:**
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.009.jpeg)
+![](pub-sub.jpeg)
 
 The JSON Data can be seen with Distance as the Sensor data of interest.\
 
 2. **Check Data storage of sensor Data onto TimestreamDB  fed from the IOT Core service.**
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.010.jpeg)
+![](data-in-DB.jpeg)
 
 We can see the data stored with field values like mac_Id(String) and distance (Integer).
 
 3. **Viewing the final output Of real time Data through a Graphical Dashboard, we can set the custom threshold for alert to detect water /fluid levels in the tank**
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.011.jpeg)
+![](out-result-1.jpeg)
 
 Dimensions- {
 
@@ -379,7 +379,7 @@ By Directly buying the individual sensors we believe that an IOT based Smart Tan
 
 A sample cloud Architecture for this will be like the one shown in the diagram below:
 
-![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.012.png)
+![](enhanced-design.png)
 
 A sample cloud Architecture using EC2 Instance running InfluxDB
 
