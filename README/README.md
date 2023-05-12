@@ -1,4 +1,4 @@
-﻿**Smart-Tank With Fluid Level Dashboard** 
+**Smart-Tank With Fluid Level Dashboard** 
  
 By :**SARVESH AHUJA**
 
@@ -6,18 +6,18 @@ By :**SARVESH AHUJA**
 
 **CHAPTERS  CONTENTS** 
 
-1.[ABSTRACT](#1.-ABSTRACT)\
+1.[ABSTRACT](#ABSTRACT)\
 2.[INTRODUCTION](#INTRODUCTION)\
-3.REQUIREMENT ANALYSIS\
-4.ARCHITECTURE & DESIGN\
-5.IMPLEMENTATION\
-6.RESULTS AND DISCUSSION\
-7.CONCLUSION & FUTURE ENHANCEMENT\
-8.REFERENCES\
+3.[REQUIREMENT ANALYSIS](#REQUIREMENTS)\
+4.[ARCHITECTURE & DESIGN](#ARCHITECTURE)\
+5.[IMPLEMENTATION](#IMPLEMENTATION)\
+6.[RESULTS AND DISCUSSION](#RESULTS)\
+7.[CONCLUSION & FUTURE ENHANCEMENT](#CONCLUSION)\
+8.[REFERENCES](#REFERENCES)\
 
 
 # 1. ABSTRACT
-
+<a name="ABSTRACT">
 **1.1  Background/Reasons for the project :**
 
 Targeting all the large- and small-scale industries, detecting the liquid levels remains a bit challenging. Manual supervision by noting down the readings three or four times a day calls in for a lot of laborious work. On top of that, you have no guarantee if the readings are accurate or not.
@@ -35,10 +35,9 @@ A simple IOT Application has been designed using various Software as a service a
 Using MQTT(Built on top of UDP protocol) a **Microcontroller** sends ultrasonic distance data to I**OT core** service (on AWS cloud ).This sets up the Pub-Sub Model. Role permissions are set in order to allow the service to read/write onto AWS **TimestreamDB** Database.Other security permissions( Roles )are also set in order to allow external Tool **Grafana** to query and read the TimestreamDB Table values over HTTP APIs.
 
 A dashboard is configured on Grafana cloud to view the data as desired.
-
+</a>
+# 2. INTRODUCTION
 <a name="INTRODUCTION">
- 
-#2. INTRODUCTION
 
 ->**Scenario Description:**
 
@@ -52,8 +51,10 @@ A dashboard is configured on Grafana cloud to view the data as desired.
 - The AWS Security Groups help define the access key and secret access key for the interface. This is done ensuring proper policies are set as to what resources the interface can access.
 
 </a>
-# 3. REQUIREMENTS
 
+# 3. REQUIREMENTS
+<a name="REQUIREMENTS">
+ 
 -> **Requirement Analysis:**
 
 From the given scenario, we draw the following requirements:
@@ -185,8 +186,8 @@ The architecture consists of **three** major networks:
 
 These components are interconnected with each other with security in mind.
 
-4. **IMPLEMENTATION**
-
+# 4. IMPLEMENTATION
+<a name="IMPLEMENTATION">
 **This project’s implementation is divided into three-phases/modules:**
 
 1. **Client-side:**
@@ -316,8 +317,9 @@ Table: table name  created in the AWS Timestream Console
 **Step 13:** Configure the chart as desired from the pane at the right of the webpage.
 
 **Step 14:** Click back and on the top right of the dashboard click on the timer button and select- refresh option of 5 seconds and display data of last 30 seconds.
-
-5. **RESULTS AND DISCUSSION**
+ </a>
+# 5. RESULTS AND DISCUSSION
+<a name="RESULTS">
 1. **Check Data Retrieval Pub-Sub Model Connection on MQTT Test Client:**
 
 ![](Aspose.Words.5956b42c-6c98-46d4-b74b-d43704469cf7.009.jpeg)
@@ -339,9 +341,9 @@ Dimensions- {
 X -Axis: Time(units- 5 second)
 
 Y -Axis: Distance(units- 1 centimeter) )
-
-6. **CONCLUSION AND FUTURE ENHANCEMENT**
-
+ </a>
+# 6. CONCLUSION AND FUTURE ENHANCEMENT
+<a name="CONCLUSIONS">
 Through the use of wireless sensors and cloud-based database software, remote tank monitoring allows industries to stay up-to-date with how much of an asset they have, how much they have, and when they need it. This enables companies to make the best decisions for their business or project, increasing efficiency and reducing unnecessary costs.
 
 **6.1:Cost Benefit:**
@@ -385,9 +387,9 @@ A sample cloud Architecture using EC2 Instance running InfluxDB
 **6.2.2: Other forms of applying same project concept:**
 
 This type of module can also be implemented to monitor Garbage cans around the city to route the Garbage collector trucks in the optimal path. Used in smart vending machines to monitor products used most frequently and give insight to the owner of the same.
-
-**REFERENCES**
-
+ </a>
+# REFERENCES
+<a name="REFERENCES">
 1. AWS Documentations-
    1. For IOT Core Service- <https://docs.aws.amazon.com/iot/index.html>
    1. For TimestreamDB- <https://docs.aws.amazon.com/timestream/index.html>
@@ -401,3 +403,5 @@ This type of module can also be implemented to monitor Garbage cans around the c
    2. <https://www.biz4intellia.com/level-monitoring-solution/>
 
 4.3. [https://www.ruggedtelemetry.com/solutions/tank-monitoring?gclid=Cj0KCQiAyM KbBhD1ARIsANs7rEHsyZSwOLy2hJS_0SYCOf_Qmi7AtDHWYSaumUDoIiIW yLirs_ixlqkaAgDMEALw_wcB](https://www.ruggedtelemetry.com/solutions/tank-monitoring?gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHsyZSwOLy2hJS_0SYCOf_Qmi7AtDHWYSaumUDoIiIWyLirs_ixlqkaAgDMEALw_wcB)
+
+ </a>
