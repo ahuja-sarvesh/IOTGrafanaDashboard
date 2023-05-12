@@ -18,6 +18,7 @@ By :**SARVESH AHUJA**
 
 # 1. ABSTRACT
 <a name="ABSTRACT">
+ 
 **1.1  Background/Reasons for the project :**
 
 Targeting all the large- and small-scale industries, detecting the liquid levels remains a bit challenging. Manual supervision by noting down the readings three or four times a day calls in for a lot of laborious work. On top of that, you have no guarantee if the readings are accurate or not.
