@@ -37,7 +37,8 @@ Using MQTT(Built on top of UDP protocol) a **Microcontroller** sends ultrasonic 
 A dashboard is configured on Grafana cloud to view the data as desired.
 
 <a name="INTRODUCTION">
-# 2. INTRODUCTION
+ 
+#2. INTRODUCTION
 
 ->**Scenario Description:**
 
