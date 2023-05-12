@@ -7,7 +7,7 @@ By :**SARVESH AHUJA**
 **CHAPTERS  CONTENTS** 
 
 1.[ABSTRACT](#1.-ABSTRACT)\
-2.[INTRODUCTION](#2.-**INTRODUCTION**)\
+2.[INTRODUCTION](#2.-INTRODUCTION)\
 3.REQUIREMENT ANALYSIS\
 4.ARCHITECTURE & DESIGN\
 5.IMPLEMENTATION\
@@ -16,7 +16,7 @@ By :**SARVESH AHUJA**
 8.REFERENCES\
 
 
-# **1. ABSTRACT**
+# 1. ABSTRACT
 
 **1.1  Background/Reasons for the project :**
 
@@ -37,7 +37,7 @@ Using MQTT(Built on top of UDP protocol) a **Microcontroller** sends ultrasonic 
 A dashboard is configured on Grafana cloud to view the data as desired.
 
 
-2. **INTRODUCTION**
+# 2. INTRODUCTION
 
 ->**Scenario Description:**
 
@@ -51,7 +51,7 @@ A dashboard is configured on Grafana cloud to view the data as desired.
 - The AWS Security Groups help define the access key and secret access key for the interface. This is done ensuring proper policies are set as to what resources the interface can access.
 
 
-3. **REQUIREMENTS**
+# 3. REQUIREMENTS
 
 -> **Requirement Analysis:**
 
